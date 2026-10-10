@@ -52,14 +52,15 @@ class SensorKeepAliveService : Service(), SensorEventListener {
     private var thread: HandlerThread? = null
     private var wl: PowerManager.WakeLock? = null
 
-    private val baseTypes = intArrayOf(
+    listOf:
+private val baseTypes = listOf(
         Sensor.TYPE_GYROSCOPE,
         Sensor.TYPE_GAME_ROTATION_VECTOR,
         Sensor.TYPE_ACCELEROMETER,
         Sensor.TYPE_GRAVITY
     )
 
-    private val ultraTypes = baseTypes + intArrayOf(
+    private val ultraTypes = baseTypes + listOf(
         Sensor.TYPE_GYROSCOPE_UNCALIBRATED,
         Sensor.TYPE_ROTATION_VECTOR,
         Sensor.TYPE_LINEAR_ACCELERATION

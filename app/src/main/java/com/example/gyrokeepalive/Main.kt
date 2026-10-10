@@ -58,13 +58,7 @@ class SensorKeepAliveService : Service(), SensorEventListener {
         Sensor.TYPE_ACCELEROMETER,
         Sensor.TYPE_GRAVITY
     )
-
-    private val ultraTypes = baseTypes + listOf(
-        Sensor.TYPE_GYROSCOPE_UNCALIBRATED,
-        Sensor.TYPE_ROTATION_VECTOR,
-        Sensor.TYPE_LINEAR_ACCELERATION
-    )
-
+    
     private val ultraTypes = baseTypes + listOf(
         Sensor.TYPE_GYROSCOPE_UNCALIBRATED,
         Sensor.TYPE_ROTATION_VECTOR,
